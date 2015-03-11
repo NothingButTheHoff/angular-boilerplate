@@ -1,5 +1,5 @@
 {
-  "name": "Angular Boilerplate",
+  "name": "Angular-Boilerplate",
   "version": "1.0.0",
   "description": "Angular boilerplate with Gulp buildsystem",
   "main": "gulpfile.js",
