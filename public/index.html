@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angular-boilerplate">
+<head>
+  <meta charset="UTF-8">
+  <title ng-controller="IndexController">{{pageTitle}}</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="app/css/master.css">
+
+  <!-- Angular libraries -->
+  <script src="app/lib/angular/angular.min.js"></script>
+  <script src="app/lib/angular/angular-route.min.js"></script>
+
+  <!-- Main entry point -->
+  <script src="app/js/app.js"></script>
+  
+  <!-- Controllers -->
+  <script src="app/js/controllers/controllers.js"></script>
+
+  <!-- Directives -->
+  <script src="app/js/directives/directives.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>Header goes here!</h1>
+  </header>
+
+  <main ng-view></main>
+
+</body>
+</html>
