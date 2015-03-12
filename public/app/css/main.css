@@ -4,5 +4,13 @@ body, html {
 }
 
 h1 {
-  color: #678;
+  color: #639;
+}
+
+div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
 }
