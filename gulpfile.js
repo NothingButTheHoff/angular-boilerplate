@@ -20,14 +20,14 @@ gulp.task('webserver', function() {
 
 gulp.task('styles', function() {
 	return sass('src/sass/main.scss', { style: 'expanded' })
-		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+		.pipe(autoprefixer('last 3 version', 'safari 8', 'ie 11', 'ie 9', 'chrome 44','firefox 39', 'opera 29', 'ios 8', 'android 4'))
 		.pipe(gulp.dest('public/app/css/'))	
 		.pipe(rename({suffix: '.min'}))
     	.pipe(minifycss())
     	.pipe(gulp.dest('public/app/css/'))
-		.pipe(notify({ message: 'Styles task complete without errors'}));
-
+		.pipe(notify({ message: 'Styles task completed without errors'}));
 });
+
 
 gulp.task('watch', function() {
   gulp.watch('src/sass/*.scss', ['styles']);
