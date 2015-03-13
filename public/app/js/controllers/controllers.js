@@ -9,5 +9,6 @@ angular.module('boilerplateControllers', [] )
 
 .controller('ExampleCtrl', ['$scope', function($scope) {
 	$scope.title = "Example";
-}])
+	$scope.animClass = "fade";
+}]);
 

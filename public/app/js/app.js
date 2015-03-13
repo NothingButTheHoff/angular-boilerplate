@@ -3,14 +3,14 @@
 angular.module('angular-boilerplate', [
 		'boilerplateControllers',
 		'boilerplateDirectives',
-		'ngRoute'
+		'ngRoute',
+		'ngAnimate'
 ])
 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 		.when('/example', {
 			templateUrl: 'app/views/example.html',
-			controller: 'ExampleCtrl'
 		})
 		.otherwise({
 			redirectTo: '/'

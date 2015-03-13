@@ -103,3 +103,25 @@ div {
           flex-direction: column;
   border-radius: 5px;
 }
+
+/* Animations
+===========================================*/
+.fade {
+  -webkit-transition: 1s;
+}
+
+.fade.ng-enter {
+  opacity: 0;
+}
+
+.fade.ng-leave {
+  opacity: 1;
+}
+
+.fade.ng-enter-active {
+  opacity: 1;
+}
+
+.fade.ng-leave-active {
+  opacity: 0;
+}

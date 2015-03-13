@@ -9,6 +9,8 @@
   <!-- Angular libraries -->
   <script src="app/lib/angular/angular.min.js"></script>
   <script src="app/lib/angular/angular-route.min.js"></script>
+  <script src="app/lib/angular/angular-animate.min.js"></script>
+
 
   <!-- Main entry point -->
   <script src="app/js/app.js"></script>
@@ -28,7 +30,7 @@
     <a href="#/example">Example</a>
   </header>
 
-  <main ng-view></main>
+  <div ng-view ng-controller="ExampleCtrl" class="example {{animClass}}"></div>
 
 </body>
 </html>
